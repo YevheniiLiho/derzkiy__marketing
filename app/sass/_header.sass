@@ -1,0 +1,67 @@
+.header
+   position: fixed
+   width: 100%
+   top: 0
+   left: 0
+   z-index: 100
+   // &:before
+   //    content: ''
+   //    position: absolute
+   //    top: 0
+   //    left: 0
+   //    width: 100%
+   //    height: 100%
+   //    z-index: 62
+   &__wrapp
+      display: flex
+      justify-content: space-between
+      align-items: center
+      width: 70%
+   &__body
+      position: relative
+      width: 100%
+      padding: 50px 30px 0px 30px 
+      display: flex
+      justify-content: space-between
+      height: 140px
+      align-items: start
+   &__logo
+      width: 30%
+      flex: 0 0 265px
+      overflow: hidden
+      position: relative
+      z-index: 63
+      img
+         max-width: 100%
+         display: block
+   &__burger
+      display: none
+   &__menu
+      width: 100%
+      padding-right: 75px
+
+   &__list
+      display: flex
+      justify-content: space-between
+      position: relative
+      z-index: 62
+      li
+         list-style: none
+   &__link
+      position: relative
+      color: $light-text
+      font-size: 18px
+      font-weight: 900
+      text-decoration: none
+      text-transform: uppercase
+      &:hover
+         color: $primary-text
+   &__contact
+      position: relative
+      color: $dark-text
+      font-size: 34px
+      padding: 10px 35px
+      margin-right: 90px
+      background: $primary-text
+      white-space: nowrap
+      z-index: 70
